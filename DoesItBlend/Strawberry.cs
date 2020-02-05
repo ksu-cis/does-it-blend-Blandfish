@@ -7,7 +7,7 @@ namespace DoesItBlend
     /// <summary>
     /// A class representing a Strawberry
     /// </summary>
-    public class Strawberry : Fruit
+    public class Strawberry : Fruit, IBlendable
     {
         /// <summary>
         /// Blends the strawberry

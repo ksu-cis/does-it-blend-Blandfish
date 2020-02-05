@@ -12,15 +12,18 @@ namespace DoesItBlend
             var b = new Banana();
             var s = new Strawberry();
             var m = new Mango();
+            var c = new IceCubes();
+            var p = new CellPhone();
 
             Console.WriteLine(b.Blend());
             Console.WriteLine(s.Blend());
             Console.WriteLine(m.Blend());
 
-            List<Fruit> fruits = new List<Fruit>() { b, s, m };
+            List<IBlendable> fruits = new List<IBlendable>() { b, s, m , c, p};
             
-            foreach(Fruit f in fruits)
+            foreach(var f in fruits)
             {
+                Console.WriteLine(f.GetType());
                 Console.WriteLine(f.Blend());
             }
 
